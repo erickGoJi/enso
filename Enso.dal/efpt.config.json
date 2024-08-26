@@ -1,0 +1,1 @@
+﻿{"ContextClassName":"Db_EnsoContext","DefaultDacpacSchema":null,"IdReplace":false,"IncludeConnectionString":true,"OutputPath":"DBContext","ProjectRootNamespace":"Enso.dal","SelectedToBeGenerated":0,"Tables":[{"HasPrimaryKey":true,"Name":"dbo.users"}],"UseDatabaseNames":false,"UseFluentApiOnly":true,"UseHandleBars":false,"UseInflector":true}

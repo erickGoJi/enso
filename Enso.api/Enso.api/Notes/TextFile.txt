@@ -1,0 +1,32 @@
+﻿				
+		/*
+		* Encrypting anwser in the back, 
+		* and sending the encrypted response to front	
+		*/
+		//[HttpGet]
+        //public IActionResult GetUsuarios([FromQuery] int id)
+        //{
+        //    var res = (from u in _context.Usuarios
+        //               select new { u.Id, u.Nombre, u.Paterno, u.Materno, u.Phone, u.Email, u.Tipo, u.FechaRegistro, u.Codigo, u.Verificado }
+        //             ); ;           
+
+        //    var jsonRes = JsonConvert.SerializeObject(res);
+        //    var encryptedResponse = Protection.Encrypt(jsonRes, _config);
+        //    var dec = Protection.DecryptBack(encryptedResponse, _config);
+        //    return Ok(new { result = "Success", detalle = "Consulta realizada con éxito", item = res });
+        //}
+
+        /*
+         * Receiving data encrypted from front,
+         * and decrypting in back, then parsing the JSON to an Object<Usuario>,
+		 * and get the detail with LINQ.
+		 */
+        //[Route("Encrypt")]
+        //[HttpPost("{Encrypt}")]
+        //public IActionResult PostUsu([FromBody] string usuario)
+        //{
+        //    var decrypted = Protection.Decrypt(usuario, _config);
+        //    Usuario user = JsonConvert.DeserializeObject<Usuario>(decrypted);
+        //    Usuario userDetail = _context.Usuarios.Find(user.Id);
+        //    return Ok(new { result = "Success", detalle = "Consulta realizada con éxito", item = userDetail });
+        //}
